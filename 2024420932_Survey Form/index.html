@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Student Feedback Survey</h1>
+    <p id="description">Please fill out this survey to help us improve our services.</p>
+
+    <form id="survey-form">
+      
+      <label id="name-label" for="name">Name</label>
+      <input
+        id="name"
+        type="text"
+        placeholder="Enter your name"
+        required
+      />
+
+      <label id="email-label" for="email">Email</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <label id="number-label" for="number">Age</label>
+      <input
+        id="number"
+        type="number"
+        placeholder="Enter your age"
+        min="10"
+        max="100"
+      />
+
+      <select id="dropdown">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+      </select>
+
+      <p>Would you recommend this course?</p>
+      <input type="radio" name="recommend" value="yes" /> Yes
+      <input type="radio" name="recommend" value="no" /> No
+
+      <p>What do you like? (Select all that apply)</p>
+      <input type="checkbox" value="content" /> Content
+      <input type="checkbox" value="instructor" /> Instructor
+
+      <p>Additional Comments</p>
+      <textarea></textarea>
+
+      <button id="submit" type="submit">Submit</button>
+
+    </form>
+  </body>
+</html>
